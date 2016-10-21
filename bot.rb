@@ -12,7 +12,7 @@ begin
   print 'type: '.green
   s = STDIN.gets
   
-  if s != 'quit'
+  if s != 'quit' || s!='exit'
     reaction = robot.get_reaction(s)
 	if reaction.nil?
 		STDOUT.puts "Sorry".yellow
